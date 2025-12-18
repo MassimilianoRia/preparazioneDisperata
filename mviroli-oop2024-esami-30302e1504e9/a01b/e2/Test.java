@@ -4,7 +4,7 @@ public class Test {
 
 	 /*
      * Scopo di questo esercizio è realizzare una GUI con l'aspetto mostrato nell'immagine fig1.png, fornita, 
-     * che realizza la possibilità di selezionare i due estremi (alto-basso) di un rombo e quindi diegnarlo
+     * che realizza la possibilità di selezionare i due estremi (alto-basso) di un rombo e quindi disegnarlo
      * (più precisamente, il rombo è un quadrato orientato "in diagonale"):
      * 1 - l'utente clicka due celle che devono definire la parte alta e bassa (in qualunque ordine) di un rombo 
      * (devono essere celle sulla stessa colonna, a distanza multiplo di 2)
