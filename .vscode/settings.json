@@ -1,6 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "mviroli-oop2024-esami-30302e1504e9/lib/junit-platform-console-standalone-1.9.1.jar"
-    ]
-}
