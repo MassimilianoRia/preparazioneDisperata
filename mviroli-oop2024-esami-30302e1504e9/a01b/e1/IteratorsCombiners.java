@@ -30,7 +30,7 @@ public interface IteratorsCombiners {
      * @param i1
      * @param i2
      * @param operator
-     * @return an iterator the produces each time an element obtained combinig with operator the next element
+     * @return an iterator the produces each time an element obtained combining with operator the next element
      * of i1, and the next of i2. If an input iterator is over, nothing more is produced.
      */
     <X> Iterator<X> map2(Iterator<X> i1, Iterator<X> i2, BinaryOperator<X> operator);

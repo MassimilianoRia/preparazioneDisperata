@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class LogicsImpl {
+public class LogicsImpl implements Logics {
 
     private final Map<Position, Integer> cells;
     private Position firstHitPosition;
@@ -16,10 +16,12 @@ public class LogicsImpl {
         this.cells = new HashMap<>();
     }
 
+    @Override
     public void add(final Position pos) {
         this.cells.put(pos, 0);
     }
 
+    @Override
     public void hit(final Position pos) {
         if (this.firstHitPosition != null && this.secondHitPosition != null) {
             for (final var tmp : this.cells.entrySet()) {
@@ -64,10 +66,12 @@ public class LogicsImpl {
         }
     }
 
+    @Override
     public Position getFirstHitPosition() {
         return this.firstHitPosition;
     }
 
+    @Override
     public int getGridValue(final Position pos) {
         return this.cells.get(pos);
     }
