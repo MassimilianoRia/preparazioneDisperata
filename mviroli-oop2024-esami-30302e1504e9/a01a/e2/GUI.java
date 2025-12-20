@@ -10,7 +10,7 @@ public class GUI extends JFrame {
     private final static String STAR = "*";
     private final static String EMPTY = " ";
     private final Map<JButton, Position> cells = new HashMap<>();
-    private final Logic logics = new LogicsImpl();
+    private final Logics logics = new LogicsImpl();
     private int phase;
     
     public GUI(int size) {

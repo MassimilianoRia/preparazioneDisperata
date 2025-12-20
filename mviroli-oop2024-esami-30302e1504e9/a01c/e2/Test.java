@@ -26,7 +26,6 @@ public class Test {
 	 * - correttezza della parte opzionale (e assenza di difetti al codice): 3 punti
      */
 
-
     public static void main(String[] args) throws java.io.IOException {
         new GUI(10); 
     }

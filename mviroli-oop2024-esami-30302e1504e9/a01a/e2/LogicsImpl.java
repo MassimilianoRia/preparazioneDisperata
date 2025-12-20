@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class LogicsImpl implements Logic {
+public class LogicsImpl implements Logics {
 
     final private Map<Position, Boolean> cells;
 
