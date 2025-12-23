@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class GUI extends JFrame {
 
     private final Map<JButton, Position> cells = new HashMap<>();
-    private final LogicsImpl logics;
+    private final Logics logics;
 
     public GUI(int size) {
         this.logics = new LogicsImpl();
