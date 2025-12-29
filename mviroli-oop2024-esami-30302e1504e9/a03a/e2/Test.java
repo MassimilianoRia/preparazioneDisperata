@@ -10,7 +10,7 @@ public class Test {
      * 1 - inizialmente si posizionano 3 ostacoli ("o") in modo random -- fig1.png
      * 2 - i primi 5 click selezionano 5 celle diverse tra loro ("*") -- fig2.png
      * 3 - ad ogni successivo click (ovunque sia, è irrilevante) si fa scendere una e una sola "*"
-     * -- 3a una "*" scenda di una posizione verso il basso (p.e. da fig2 a fig3), ma senza collidere con un ostacolo, 
+     * -- 3a: una "*" scenda di una posizione verso il basso (p.e. da fig2 a fig3), ma senza collidere con un ostacolo, 
      * con altra "*", o con la fine della griglia (se colliderebbe, bisogna far scendere un'altra "*")
      * -- 3b: si scelga la prossima "*" da far scendere in modo arbitrario, ma garantendo in qualche modo che tutte le "*" 
      * scendano più o meno assieme (ossia non prima una fino in fondo, poi un'altra,...)
@@ -29,7 +29,6 @@ public class Test {
 	 * - qualità del codice: 4 punti
 	 * - correttezza della parte opzionale (e assenza di difetti al codice): 3 punti
      */
-
 
     public static void main(String[] args) throws java.io.IOException {
         new GUI(10); 
