@@ -31,7 +31,7 @@ public class Test {
 
 	@org.junit.Before
 	public void init() {
-		//this.simpleDB = new SimpleDBImpl();
+		// this.simpleDB = new SimpleDBImpl();
 		this.prepareDB();
 	}
 

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class LogicsImpl {
+public class LogicsImpl implements Logics {
 
     private final Map<Position, Integer> cells = new LinkedHashMap<>();
     private final Random rnd = new Random();
@@ -19,14 +19,17 @@ public class LogicsImpl {
         }
     }
 
+    @Override
     public void addCell(final Position pos) {
         this.cells.put(pos, 0);
     }
 
+    @Override
     public int getValue(final Position pos) {
         return this.cells.get(pos);
     }
 
+    @Override
     public void initGrid() {
         for (int i = 0; i < 3; i++) {
             this.cells.put(this.rndPos(), 2);
@@ -46,6 +49,7 @@ public class LogicsImpl {
         return pos;
     }
 
+    @Override
     public boolean nextStep() {
         final List<Position> path = new ArrayList<>(this.cells.keySet());
         for (final var el : path) {

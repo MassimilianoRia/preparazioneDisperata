@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class GUI extends JFrame {
 
     private final Map<JButton, Position> cells = new HashMap<>();
-    private final LogicsImpl logics = new LogicsImpl();
+    private final Logics logics = new LogicsImpl();
     
     public GUI(int size) {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
